@@ -10,9 +10,17 @@
 
 <body>
     <form action="cible.php" method="POST">
-        <p><label>Prénom : <input type="text" name="prénom" /></label></p>
-        <p><input type="submit" /></p>
+        <p><label>Prénom : <input type="text" name="prénom" /></label><br></p>
+        <p><label>Êtes-vous végétarien ? <input type="checkbox" name="végétarien" /></label><br></p>
     </form>
+
+    <form action="cible.php" method="post" enctype="multipart/form-data">
+        <p>
+                Formulaire d'envoi de fichier :<br />
+                <input type="file" name="monfichier" /><br />
+                <input type="submit" value="Envoyer le fichier" />
+        </p>
+</form>
 </body>
 
 </html>
